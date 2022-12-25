@@ -98,7 +98,6 @@ CREATE TABLE IF NOT EXISTS players_org
 	
 );
 
-SELECT * FROM sponsors
-
+SELECT * FROM players_org
 
 
