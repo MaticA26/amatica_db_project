@@ -1,3 +1,3 @@
 # 1- Last project
 
-![Alt text](/modelare_db2.drawio.png?raw=false "First database model")
+![Alt text](/Last_project.drawio.png?raw=false "First database model")
