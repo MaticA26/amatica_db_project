@@ -4,8 +4,7 @@ CREATE TABLE IF NOT EXISTS platforme --DONE
 	name VARCHAR (50) NOT NULL,
 	categories VARCHAR(50) NOT NULL,
 	earning_per_year FLOAT NOT NULL,
-	nr_ussers INTEGER NOT NULL
-
+	nr_ussers INTEGER 
 );
 
 SELECT * FROM platforme
@@ -100,4 +99,16 @@ CREATE TABLE IF NOT EXISTS players_org
 
 SELECT * FROM players_org
 
+
+CREATE TABLE IF NOT EXISTS sponsors_per_org
+(
+	id serial primary key not null,
+	sponsors_id INTEGER NOT NULL,
+	esport_organizations_id INTEGER NOT NULL,
+	FOREIGN KEY (sponsors_id) REFERENCES sponsors,
+	FOREIGN KEY (esport_organizations_id) REFERENCES esport_organizations
+	
+);
+
+SELECT * FROM sponsors_per_org
 
