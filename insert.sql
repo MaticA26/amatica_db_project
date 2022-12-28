@@ -3,10 +3,6 @@ INSERT INTO platforme (name, categories, earning_per_year,nr_ussers)VALUES
 					('EpicGames','All',6.27,58),
 					('RiotGames','Strategy,Shoters,GameBoard',218,180);
 					
-				
-SELECT * FROM platforme
-
-
 INSERT INTO sponsors(company_name, type_of, central_base)VALUES
 					('Monster Energy','Energy Drink','Corona, California'),
 					('Honda','Automotive','Hamamatsu, Japan'),
@@ -20,18 +16,12 @@ INSERT INTO sponsors(company_name, type_of, central_base)VALUES
 					('Redbull','Energy Drink','Fuschl am See, Austria'),
 					('Hp','Tehnology','Palo Alto, California');
 
-
-SELECT * FROM sponsors
-
-
-
-INSERT INTO esport_organizations (name,player_name,total_earning,tournaments_played,founded) VALUES
+INSERT INTO esport_organizations (name,player_name, total_earning,tournaments_played,founded) VALUES
 					('Fnatic','pow3r',18.93,419,'2004-07-23'),
 					('Natus Vincere','s1mple',19.98,532,'2009-12-17'),
 					('Cloud9','forsen',12.56,43,'2013-01-01'),
-					('G2 Esports','jelty',11.56,457,'2015-10-15');
-					
-SELECT * FROM games
+					('G2 Esports','jelty',11.56,457,'2015-10-15'),
+					('Team Liquid','rakin',42.98,1061,'2000-05-01');
 
 insert into games (name, type_of,nr_ussers,platforme_id) values                
 				('Counter Strike','Shooter',617676.7,1),
@@ -40,9 +30,6 @@ insert into games (name, type_of,nr_ussers,platforme_id) values
 				('Dota2','PVP',467155.1,1),
 				('Rocket League','PVP',90905401,2),
 				('FIFA','Soccer',27045,2);
-
-SELECT * FROM games
-
 
 
 insert into pro_gamers (player_name,team_name,nationality,games_id,age,total_earning) values
@@ -57,7 +44,7 @@ insert into pro_gamers (player_name,team_name,nationality,games_id,age,total_ear
 					('Caps','G2 Esports','Denmark',4,23,0.51),
 					('ShahZam','G2 Esports','US',3,29,0.25);
 
-SELECT * FROM pro_gamers
+
 
 insert into competitions (name, price_poll, last_winners) values
 						('Rio Major',1.2,'Faze Clan'),
@@ -66,7 +53,6 @@ insert into competitions (name, price_poll, last_winners) values
 						('PUBG Mobile Global Championship',4,'Comming Soon'),
 						('PGL Major Antwerp',1,'Faze Clan');
 
-SELECT * FROM competitions
 
 insert into ussers (type_of_player, platforme_id) values
 				('Amateur',1),
@@ -79,7 +65,6 @@ insert into ussers (type_of_player, platforme_id) values
 				('Semi_pro',3),
 				('Pro-player',3);
 
-SELECT * FROM ussers
 
 
 
